@@ -10,34 +10,28 @@
             <label for="quoteinput">Add Your Quote Here... </label>
           </div>
         
-            <button type="submit" id="addquote" class="btn blue-gradient btn-rounded"><i class="fa fa-quote-left" aria-hidden="true"></i> Add Quote</button>
+            <button type="submit" id="addquote" class="btn blue-gradient btn-rounded"><i class="fa fa-quote-left"></i> Add Quote</button>
         
         
         
     </form>
 
     <h2 class="card-title h2 mt-4">Quotes Of The Week</h2>
-  
-    <!-- Subtitle -->
-  
-    <!-- Grid row -->
+    
     <div class="row d-flex justify-content-center">
   
-      <!-- Grid column -->
-      <div class="col-xl-7 pb-2">
-  
-        <p class="card-text" id="quotes"></p>
-  
+      <div  id="quotes" class="col-xl-7 pb-2">
+          <p><i class="fa fa-quote-left"></i> {{ quoteOne }} <i class="fa fa-quote-right"></i></p>
+          <p><i class="fa fa-quote-left"></i> {{ quoteTwo }} <i class="fa fa-quote-right"></i></p>
+          <p><i class="fa fa-quote-left"></i> {{ quoteThree }} <i class="fa fa-quote-right"></i></p>
       </div>
-      <!-- Grid column -->
   
     </div>
-    <!-- Grid row -->
   
     <hr class="my-4 pb-2">
   
     <button class="btn btn-indigo btn-rounded">Download <i class="fas fa-download ml-1"></i></button>
   
   </div>
-  <!-- Jumbotron -->
+
 </div>
