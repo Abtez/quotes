@@ -1,12 +1,24 @@
 <div class="container-fluid">
-    <!-- Jumbotron -->
+    
 <div class="jumbotron text-center blue-grey lighten-5">
 
-    <!-- Title -->
-    <h2 class="card-title h2">Quotes Of The Week</h2>
+    <form id="addtoquotes">
+
+        <div class="md-form input-with-pre-icon">
+            <i class="fa fa-quote-left input-prefix"></i>
+            <input type="text" id="quoteinput" class="form-control">
+            <label for="quoteinput">Add Your Quote Here... </label>
+          </div>
+        
+            <button type="submit" id="addquote" class="btn blue-gradient btn-rounded"><i class="fa fa-quote-left" aria-hidden="true"></i> Add Quote</button>
+        
+        
+        
+    </form>
+
+    <h2 class="card-title h2 mt-4">Quotes Of The Week</h2>
   
     <!-- Subtitle -->
-    <button class="btn blue-gradient btn-rounded"><i class="fa fa-quote-left" aria-hidden="true"></i> Add Quote</button>
   
     <!-- Grid row -->
     <div class="row d-flex justify-content-center">
@@ -14,7 +26,7 @@
       <!-- Grid column -->
       <div class="col-xl-7 pb-2">
   
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam rem aperiam.</p>
+        <p class="card-text" id="quotes"></p>
   
       </div>
       <!-- Grid column -->
