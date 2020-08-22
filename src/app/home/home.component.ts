@@ -20,8 +20,9 @@ export class HomeComponent implements OnInit {
         let inputQuote = $("#quoteinput").val();
          localStorage.setItem(inputQuote, `${inputQuote}`);        
         console.log(inputQuote);
-        let display = $("#quotes");
-        display.append('<p>' + '<i class="fa fa-quote-left"></i>' + " " + localStorage.getItem(inputQuote) + " " + '<i class="fa fa-quote-right"></i>' + '</p>');
+        let newQuote = localStorage.getItem(inputQuote);
+
+        $(".my-quotes").addClass("myquotes").append('<p><i class="fa fa-quote-left"></i>' + " " + newQuote + " " + '<i class="fa fa-quote-right"></i>' + "<span class='icons' style='display: flex;justify-content: space-evenly;padding: 7px;cursor: pointer;font-size: 14px;'><i class='far fa-thumbs-up fa-2x' style='color: green;'><span class='counter'>22</span></i><i class='far fa-thumbs-down fa-2x' style='color: rgba(255, 102, 0, 0.637);'><span class='counter'>22</span></i><i class='far fa-trash-alt fa-2x' style='color: red;'></i></span>" + " " + '</p>').append("<hr>");
 
         event.preventDefault();
                

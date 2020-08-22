@@ -1,7 +1,31 @@
-.my-quotes p {
+
+
+.myquotes{
     padding: 15px;
     border: 3px solid #b0d2cb;
-    border-radius: 10PX;
+    border-radius: 10px;
     color: #0b4237;
     box-sizing: border-box;
+    font-family: 'Srisakdi';
+    letter-spacing: 4px;
+    font-size: 17px;
+    border-left-width: 10px;
+    box-shadow: 10px 5px 10px #0b4237;
+    text-align: center;
+}
+
+#headquote{
+    font-family: 'Marck Script';
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-decoration: underline;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    
 }
