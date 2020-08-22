@@ -94,7 +94,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": ["/home/moringa/Documents/quotes/node_modules/jquery/dist/jquery.min.js"]
+            "scripts": [
+              "/home/moringa/Documents/quotes/node_modules/jquery/dist/jquery.min.js"
+            ]
           }
         },
         "lint": {
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "quotes"
+    }
+  },
+  "defaultProject": "quotes",
+  "cli": {
+    "analytics": "00c9f4a1-0166-4434-83ba-dd5b2fe7099f"
+  }
 }
