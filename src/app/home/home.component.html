@@ -21,8 +21,8 @@
     <div class="row d-flex justify-content-center">
   
       <div  id="quotes" class="col-xl-7 pb-2 my-quotes">
-        <div>
-            <p><i class="fa fa-quote-left"></i> {{ quoteOne }} <i class="fa fa-quote-right"></i> </p>
+        <div class="items">
+            <p><i class="fa fa-quote-left"></i> {{ quotes[0] }} <i class="fa fa-quote-right"></i> </p>
 
         <div class="icons">
 
@@ -30,15 +30,45 @@
 
             <button (click)="dislike()" class="dislike" type="button"><span><i class="far fa-thumbs-down fa-2x"></i>{{ thumbsdown }}</span></button>
 
+            <button class="delete" type="button"><span><i class="far fa-trash-alt fa-2x"></i></span></button>
+
         </div>
 
         </div>
           <hr>
-          <p><i class="fa fa-quote-left"></i> {{ quoteTwo }} <i class="fa fa-quote-right"></i><span class="icons"><i class="far fa-thumbs-up fa-2x" style="color: green;"><span class="counter">22</span></i><i class="far fa-thumbs-down fa-2x" style="color: rgba(255, 102, 0, 0.637);"><span class="counter">22</span></i><i class="far fa-trash-alt fa-2x" style="color: red;"></i></span></p>
+
+          <div class="items">
+            <p><i class="fa fa-quote-left"></i> {{ quotes[1] }} <i class="fa fa-quote-right"></i> </p>
+
+        <div class="icons">
+
+            <button (click)="like()" class="like" type="button"><span><i class="far fa-thumbs-up fa-2x"></i>{{ thumbsup }}</span></button>
+
+            <button (click)="dislike()" class="dislike" type="button"><span><i class="far fa-thumbs-down fa-2x"></i>{{ thumbsdown }}</span></button>
+
+            <button class="delete" type="button"><span><i class="far fa-trash-alt fa-2x"></i></span></button>
+
+        </div>
+
+        </div>
           <hr>
-          <p><i class="fa fa-quote-left"></i> {{ quoteThree }} <i class="fa fa-quote-right"></i><span class="icons"><i class="far fa-thumbs-up fa-2x" style="color: green;"><span class="counter">22</span></i><i class="far fa-thumbs-down fa-2x" style="color: rgba(255, 102, 0, 0.637);"><span class="counter">22</span></i><i class="far fa-trash-alt fa-2x" style="color: red;"></i></span></p>
-          <hr> 
-          <p></p>
+
+          <div class="items">
+            <p><i class="fa fa-quote-left"></i> {{ quotes[2] }} <i class="fa fa-quote-right"></i> </p>
+
+        <div class="icons">
+
+            <button (click)="like()" class="like" type="button"><span><i class="far fa-thumbs-up fa-2x"></i>{{ thumbsup }}</span></button>
+
+            <button (click)="dislike()" class="dislike" type="button"><span><i class="far fa-thumbs-down fa-2x"></i>{{ thumbsdown }}</span></button>
+
+            <button class="delete" type="button"><span><i class="far fa-trash-alt fa-2x"></i></span></button>
+
+        </div>
+
+        </div>
+          <hr>
+        
         </div>
   
     </div>
