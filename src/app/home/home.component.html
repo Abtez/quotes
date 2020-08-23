@@ -2,21 +2,7 @@
     
 <div class="jumbotron text-center blue-grey lighten-5">
 
-    <form id="addtoquotes">
-
-        <div class="md-form input-with-pre-icon">
-            <i class="fa fa-quote-left input-prefix"></i>
-            <input type="text" id="quoteinput" class="form-control">
-            <label for="quoteinput">Write Your Quote Here... </label>
-          </div>
-        
-            <button type="submit" id="addquote" class="btn blue-gradient btn-rounded"><i class="fa fa-quote-left"></i> Add Quote</button>
-        
-        
-        
-    </form>
-
-    <h2 id="headquote" class="card-title h2 mt-4">Quotes Of The Week</h2>
+    <h2 id="headquote" class="card-title h2 mt-4">Quotes Of The Year</h2>
     
     <div class="row d-flex justify-content-center">
   
@@ -26,57 +12,15 @@
 
         <div class="icons">
 
-            <button (click)="like()" class="like" type="button"><span><i class="far fa-thumbs-up fa-2x"></i>{{ thumbsup }}</span></button>
+            <div (click)="like()" class="like" type="button"><span><i class="far fa-thumbs-up fa-2x"></i>{{ thumbsup }}</span></div>
 
-            <button (click)="dislike()" class="dislike" type="button"><span><i class="far fa-thumbs-down fa-2x"></i>{{ thumbsdown }}</span></button>
+            <div (click)="dislike()" class="dislike" type="button"><span><i class="far fa-thumbs-down fa-2x"></i>{{ thumbsdown }}</span></div>
 
-            <button class="delete" type="button"><span><i class="far fa-trash-alt fa-2x"></i></span></button>
+            <div class="delete" type="button"><span><i class="far fa-trash-alt fa-2x"></i></span></div>
 
+          </div>
         </div>
-
-        </div>
-          <hr>
-
-          <div class="items">
-            <p><i class="fa fa-quote-left"></i> {{ quotes[1] }} <i class="fa fa-quote-right"></i> </p>
-
-        <div class="icons">
-
-            <button (click)="like()" class="like" type="button"><span><i class="far fa-thumbs-up fa-2x"></i>{{ thumbsup }}</span></button>
-
-            <button (click)="dislike()" class="dislike" type="button"><span><i class="far fa-thumbs-down fa-2x"></i>{{ thumbsdown }}</span></button>
-
-            <button class="delete" type="button"><span><i class="far fa-trash-alt fa-2x"></i></span></button>
-
-        </div>
-
-        </div>
-          <hr>
-
-          <div class="items">
-            <p><i class="fa fa-quote-left"></i> {{ quotes[2] }} <i class="fa fa-quote-right"></i> </p>
-
-        <div class="icons">
-
-            <button (click)="like()" class="like" type="button"><span><i class="far fa-thumbs-up fa-2x"></i>{{ thumbsup }}</span></button>
-
-            <button (click)="dislike()" class="dislike" type="button"><span><i class="far fa-thumbs-down fa-2x"></i>{{ thumbsdown }}</span></button>
-
-            <button class="delete" type="button"><span><i class="far fa-trash-alt fa-2x"></i></span></button>
-
-        </div>
-
-        </div>
-          <hr>
-        
-        </div>
-  
     </div>
-  
-    <hr class="my-4 pb-2">
-  
-    <button class="btn btn-indigo btn-rounded">Download <i class="fas fa-download ml-1"></i></button>
-  
   </div>
-
+</div>
 </div>

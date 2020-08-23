@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
   "Whoever is happy will make others happy too"
 ]
 
+
+
   thumbsup = 0;
   thumbsdown = 0;
 
@@ -32,6 +34,7 @@ export class HomeComponent implements OnInit {
     $(document).ready(function(){
       $(".delete").click(function(){
         $(".items").remove();
+        $("hr").remove();
       })
     })
   }
