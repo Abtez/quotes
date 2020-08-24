@@ -1,6 +1,6 @@
 <div class="container-fluid">
-    <div class="d-flex justify-content-center">
-        <button><i class="fa fa-thumbs-up" style="color: green;"></i></button>
+    <div class="icons">
+        <button (click)="upVote($event)"><i class="fa fa-thumbs-up" style="color: green;"></i>{{ quotes.upVote }}</button>
         <button><i class="fa fa-thumbs-down" style="color:rgba(255, 102, 0, 0.637);"></i></button>
          <button><i class="fas fa-trash-alt fa-2x" style="color:red;"></i></button>
     </div>

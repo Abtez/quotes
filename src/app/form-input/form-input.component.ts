@@ -16,7 +16,6 @@ export class FormInputComponent implements OnInit {
   onSubmit(){
     this.addQuote.emit(this.newMyQuote);
     this.newMyQuote = new Quotes("", "","", new Date(), 0,0);
-    console.log(this.newMyQuote.quote)
   }
  
   constructor() { }
