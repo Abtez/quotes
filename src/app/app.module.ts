@@ -13,6 +13,7 @@ import { FormInputComponent } from './form-input/form-input.component';
 import { from } from 'rxjs';
 import { environment } from './../environments/environment';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
     NavbarComponent,
     HomeComponent,
     FormInputComponent,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    HighlightDirective
   ],
   imports: [
     AngularFireDatabaseModule,
