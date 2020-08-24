@@ -12,10 +12,6 @@ export class QuotesServService {
 
   constructor(private firebasedb: AngularFireDatabase) { }
 
-  getMyQuotes(){
-    this.myQuotes = this.firebasedb.list('quotes');
-    return this.myQuotes;
-  }
 
 }
 

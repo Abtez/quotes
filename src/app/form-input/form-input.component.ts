@@ -1,5 +1,5 @@
 import { Quotes } from './quotes-class';
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import $ from 'jquery';
 
 @Component({
@@ -9,9 +9,10 @@ import $ from 'jquery';
 })
 export class FormInputComponent implements OnInit {
 
+  newMyQuote = new Quotes("", "","", new Date(), 0,0);
+
   @Output() addQuote = new EventEmitter <Quotes>();
 
-  newMyQuote = new Quotes("", "","", new Date(), 0,0);
 
   onSubmit(){
     this.addQuote.emit(this.newMyQuote);

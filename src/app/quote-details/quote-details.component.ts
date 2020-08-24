@@ -13,7 +13,7 @@ export class QuoteDetailsComponent implements OnInit {
   @Output() isComplete = new EventEmitter<boolean>();
 
   
-  quoteDelete(complete:boolean){
+  deleteQuote(complete:boolean){
     this.isComplete.emit(complete)
   }
 
