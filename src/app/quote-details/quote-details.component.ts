@@ -12,8 +12,8 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quotes:Quotes;
 
   @Output() isComplete = new EventEmitter<boolean>();
-  
-  deleteQuote(complete:boolean){
+
+  quoteDelete(complete:boolean){
     this.isComplete.emit(complete)
   }
 
@@ -24,7 +24,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   thumbsDown = 0;
   downVote(){
-   this.thumbsDown++
+   this.thumbsDown
   }
 
   constructor() { }

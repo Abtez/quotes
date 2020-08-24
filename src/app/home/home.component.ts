@@ -10,16 +10,13 @@ import $ from 'jquery';
 export class HomeComponent implements OnInit {
 
   quotes:Quotes[] =[
-    new Quotes("Let bygones be bygones resemblance gets old","Joseph Morgan","Abzed", new Date,0,0),
-    new Quotes("Ir Is Wot It Is..","Anonymous","Abzed", new Date,0,0),
-    new Quotes("I can ger it, You can ger it... Anyone can get it","Matiangi","Abzed", new Date,0,0),
+    new Quotes("Let bygones be bygones resemblance gets old","Joseph Morgan","Abzed", new Date),
+    new Quotes("Ir Is Wot It Is..","Anonymous","Abzed", new Date),
+    new Quotes("I can ger it, You can ger it... Anyone can get it","Matiangi","Abzed", new Date),
   ];
 
   addNewQuote(quotes){
-    let quoteLength = this.quotes.length;
-    quotes.id = quoteLength + 1;
-    quotes.completeDate = new Date(quotes.completeDate)
-    this.quotes.push(quotes)
+    this.quotes.push(quotes);
   }
 
   deleteQuote(isComplete, index){
