@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Quote } from '@angular/compiler';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import $ from 'jquery';
 
 @Component({
@@ -8,6 +9,9 @@ import $ from 'jquery';
 })
 export class FormInputComponent implements OnInit {
 
+  @Output() addQuote = new EventEmitter<Quote>;
+
+  newMyQuote = new Quote("", "","", new Date(), 0,0);
  
   constructor() { }
 
