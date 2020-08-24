@@ -9,22 +9,27 @@ import $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
 
-  quotes:Quotes[] =[
+  quote:Quotes[] =[
     new Quotes("Let bygones be bygones resemblance gets old","Joseph Morgan","Abzed", new Date),
     new Quotes("Ir Is Wot It Is..","Anonymous","Abzed", new Date),
     new Quotes("I can ger it, You can ger it... Anyone can get it","Matiangi","Abzed", new Date),
   ];
 
   addNewQuote(quotes){
-    this.quotes.push(quotes);
+    this.quote.unshift(quotes)
+    console.log(quotes)
   }
 
+  toogleDetails(index){
+    this.quote[index].showDescription = !this.quote[index].showDescription;
+  }
+  
   deleteQuote(isComplete, index){
     if (isComplete){
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
+      let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].quote}?`)
 
       if (toDelete){
-        this.quotes.splice(index, 1)
+        this.quote.splice(index, 1)
       }
     }
   }
@@ -33,6 +38,9 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit(): void { 
+    $(document).ready(function(){
+     
+    })
   }
 
 }

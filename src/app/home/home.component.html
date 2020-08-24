@@ -8,34 +8,34 @@
 
     <h2 id="headquote" class="card-title h2">Quotes Of The Decade</h2>
     
-    <div *ngFor="let quote of quotes;let i = index;" class="row d-flex justify-content-center">
+    <div *ngFor="let quote of quote;let i = index;" class="row d-flex justify-content-center">
   
       <div id="quotes" class="col-xl-7 pb-2 quotes-body">
 
-        <div class="myquotes">
-          <h2>Quote...</h2>
+        <div>
+          <h2 style="text-decoration: underline;">Quote...</h2>
           <h4>{{ quote.quote }}</h4>
         </div>
 
-        <div class="myquotes">
+        <div *ngIf="quote.showDescription" #auth class="myquotes">
           <h2>Author...</h2>
-          <h4>{{ quote.author }}</h4>
+          <h4>{{ quote.author }} </h4>
         </div>
 
-        <div class="myquotes">
+        <div *ngIf="quote.showDescription" class="myquotes">
           <h2>Submited By...</h2>
           <h4>{{ quote.submitter }}</h4>
         </div>
 
-        <div class="myquotes">
-          <h2>From Date...</h2>
-          <h4>{{ quote.date  }}</h4>
+        <div *ngIf="quote.showDescription" class="myquotes">
+          <h2 *ngIf="quote.showDescription">From Date...</h2>
+          <h4>{{ quote.date | date : "short" }}</h4>
         </div>
 
-        <app-quote-details [quotes]="quotes" (isComplete)='deleteQuote($event,i)'></app-quote-details>
+        <app-quote-details *ngIf="quote.showDescription" [quotes]="quote" (isComplete)='deleteQuote($event,i)'></app-quote-details>
 
 
-        <button type="button" class="btn btn-outline-success" id="toggle">View Details</button>
+        <button (click)="toogleDetails(i)" type="button" class="btn btn-outline-success" id="toggle">View Details</button>
 
     </div>
   </div>

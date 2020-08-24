@@ -11,20 +11,20 @@
 
                 <div class="md-form input-with-pre-icon">
                     <i class="fa fa-quote-left input-prefix"></i>
-                    <input type="text" [(ngModel)]="newMyQuote.quote" name="quotesinput" class="form-control">
+                    <input type="text" [(ngModel)]="newQuote.quote" #name='ngModel' name="quotesinput" class="form-control">
                     <label for="quoteinput">Write Quote Here... </label>
                   </div>
 
                   <div class="md-form input-with-pre-icon">
-                    <input type="text" [(ngModel)]="newMyQuote.author" #name='ngModel' name="author" placeholder="Author Of The Quote" class="form-group">
+                    <input type="text" [(ngModel)]="newQuote.author" #name='ngModel' name="author" placeholder="Author Of The Quote" class="form-group">
                   </div>
 
                   <div class="md-form input-with-pre-icon">
-                    <input type="text" [(ngModel)]="newMyQuote.submitter" #name='ngModel' name="submitter" placeholder="Submitted by..." class="form-group">
+                    <input type="text" [(ngModel)]="newQuote.submitter" #name='ngModel' name="submitter" placeholder="Submitted by..." class="form-group">
                   </div>
 
                   <div id="date-picker-example" id="datepicker" class="md-form md-outline input-with-post-icon datepicker">
-                    <input placeholder="Select date" type="date" [(ngModel)]="newMyQuote.date" #name='ngModel' name="date" class="form-group">
+                    <input placeholder="Select date" type="date" [(ngModel)]="newQuote.date" #name='ngModel' name="date" class="form-group">
                   </div>
                 
                     <button (click)="onSubmit()" class="btn blue-gradient btn-rounded"><i class="fa fa-quote-left"></i> Add Quote</button>

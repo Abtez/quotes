@@ -24,7 +24,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   thumbsDown = 0;
   downVote(){
-   this.thumbsDown
+   this.thumbsDown--
   }
 
   constructor() { }
