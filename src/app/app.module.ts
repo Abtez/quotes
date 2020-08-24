@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { FormInputComponent } from './form-input/form-input.component';
 import { from } from 'rxjs';
 import { environment } from './../environments/environment';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { environment } from './../environments/environment';
     HeaderComponent,
     NavbarComponent,
     HomeComponent,
-    FormInputComponent
+    FormInputComponent,
+    QuoteDetailsComponent
   ],
   imports: [
     AngularFireDatabaseModule,
