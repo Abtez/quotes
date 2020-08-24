@@ -9,12 +9,13 @@ import { Quote } from '@angular/compiler';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  quotes = [ "The way to get started is to quit talking and begin doing",
+
+  public quotes = [ "The way to get started is to quit talking and begin doing",
   "Tell me and I forget. Teach me and I remember. Involve me and I learn",
   "Whoever is happy will make others happy too"
 ]
 
-
+public inputQuote
 
   thumbsup = 0;
   thumbsdown = 0;
