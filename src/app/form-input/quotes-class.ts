@@ -7,8 +7,8 @@ export class Quotes {
         public author: string,
         public submitter: string ,
         public date: Date, 
-        public upVote: number, 
-        public downVote :number
+        public upVote: number = 0, 
+        public downVote :number = 0
         )
 
         {this.showDescription=false;}

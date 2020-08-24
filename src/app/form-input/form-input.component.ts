@@ -9,10 +9,9 @@ import $ from 'jquery';
 })
 export class FormInputComponent implements OnInit {
 
-  newMyQuote = new Quotes("", "","", new Date(), 0,0);
+  newMyQuote = new Quotes("", "","", new Date(), 0, 0);
 
   @Output() addQuote = new EventEmitter <Quotes>();
-
 
   onSubmit(){
     this.addQuote.emit(this.newMyQuote);

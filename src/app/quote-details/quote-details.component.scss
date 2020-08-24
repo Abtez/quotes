@@ -3,5 +3,14 @@
     justify-content: space-evenly;
     padding: 7px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 13px;
+}
+
+button{
+    border: none;
+}
+button:hover{
+  box-shadow: 5px 2px 5px 2px black;
+  transition: all ease-in 0.1s;
+  transform: scale(1.1);
 }

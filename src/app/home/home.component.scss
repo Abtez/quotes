@@ -13,18 +13,13 @@
     box-shadow: 10px 5px 10px #0b4237;
     text-align: center;
 
-    button{
-        border: none;
-    }
-    button:hover{
-      box-shadow: 5px 2px 5px 2px black;
-      transition: all ease-in 0.1s;
-      transform: scale(1.1);
-    }
-
     .myquotes h2{
         text-decoration: underline;
     }
+}
+
+#toggle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #headquote{

@@ -6,7 +6,7 @@
 
   
 
-    <h2 id="headquote" class="card-title h2 mt-4">Quotes Of The Decade</h2>
+    <h2 id="headquote" class="card-title h2">Quotes Of The Decade</h2>
     
     <div *ngFor="let quote of quotes;let i = index;" class="row d-flex justify-content-center">
   
@@ -32,10 +32,10 @@
           <h4>{{ quote.date  }}</h4>
         </div>
 
-        <app-quote-details [quotes]="quotes" isComplete="deleteQuote($event)"></app-quote-details>
+        <app-quote-details [quotes]="quotes"></app-quote-details>
 
 
-        <button id="toggle">View Details</button>
+        <button type="button" class="btn btn-outline-success" id="toggle">View Details</button>
 
     </div>
   </div>

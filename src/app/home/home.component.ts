@@ -31,9 +31,6 @@ export class HomeComponent implements OnInit {
       }
     }
   }
-  completeDate(complete: boolean){
-    
-  }
 
   constructor() {
    }
