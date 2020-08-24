@@ -10,7 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FormInputComponent } from './form-input/form-input.component';
-import { from } from 'rxjs';
 import { environment } from './../environments/environment';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HighlightDirective } from './highlight.directive';

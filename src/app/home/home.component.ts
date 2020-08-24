@@ -1,5 +1,6 @@
+import { QuoteDetailsComponent } from './../quote-details/quote-details.component';
 import { Quotes } from './../form-input/quotes-class';
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import $ from 'jquery';
 
 @Component({

@@ -27,14 +27,12 @@ export class QuoteDetailsComponent implements OnInit {
    this.thumbsDown--
   }
 
-  preNum:number
-  lastNum:number
-  counter:number
-
-  highestUpvote(){
-    this.preNum = 0;
-    this.lastNum = 0;
+  highestValue(){
+    if(this.thumbsUp === Math.max()){
+      return true;
+    }
   }
+
   constructor() { }
 
   ngOnInit(): void {
