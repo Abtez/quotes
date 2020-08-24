@@ -1,31 +1,19 @@
-import { QuotesServService } from './myservices/quotes-serv.service';
-import { element } from 'protractor';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import $ from 'jquery';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  providers :[QuotesServService]
 })
 export class HomeComponent implements OnInit {
 
+
   quotesList:any[];
 
-  constructor(private quoteService: QuotesServService) {
+  constructor() {
    }
 
   ngOnInit(): void { 
-   this.quoteService.getMyQuotes().snapshotChanges().subscribe(
-     item => {
-       this.quotesList = [];
-       item.forEach(element =>{
-         var x = element.payload.toJSON();
-         x = element.key;
-         this.quotesList.push(x)
-       })
-     }
-   );
   }
 
   thumbsup = 0;

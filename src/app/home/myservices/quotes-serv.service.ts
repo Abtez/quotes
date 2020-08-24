@@ -17,12 +17,6 @@ export class QuotesServService {
     return this.myQuotes;
   }
 
-  addQuotes(quotes:any){
-    this.myQuotes.push({
-       quotes:quotes,
-    })
-  }
-
 }
 
 
