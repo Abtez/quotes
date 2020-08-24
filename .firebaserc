@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "quotes-af7ab": {
+      "hosting": {
+        "quotes": [
+          "quotes-af7ab"
+        ]
+      }
+    }
+  }
+}
