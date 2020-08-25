@@ -4,16 +4,7 @@
 
 export const environment = {
   production: false,
-  firebase : {
-    apiKey: "AIzaSyBTwTX6F5lXMTCB4xdCpAqbojrSPo3n_4k",
-    authDomain: "quotes-af7ab.firebaseapp.com",
-    databaseURL: "https://quotes-af7ab.firebaseio.com",
-    projectId: "quotes-af7ab",
-    storageBucket: "quotes-af7ab.appspot.com",
-    messagingSenderId: "1057478145680",
-    appId: "1:1057478145680:web:69a5c0037cad69642e4a15",
-    measurementId: "G-6TQKLP6EQQ"
-  }
+ 
 };
 
 /*
