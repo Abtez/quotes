@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
 
   addNewQuote(quotes){
     this.quote.unshift(quotes)
-    console.log(quotes)
   }
 
   toogleDetails(index){

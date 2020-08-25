@@ -4,7 +4,6 @@ import { FormsModule }   from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FormInputComponent } from './form-input/form-input.component';
@@ -15,7 +14,6 @@ import { HighlightDirective } from './highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     NavbarComponent,
     HomeComponent,
     FormInputComponent,
