@@ -22,7 +22,7 @@ This  is a web application where a user can:
 
 ## Deployed Live Link
 
-Click on this [link]() to access the live site of the web application.
+Click on this [link](https://abzed.github.io/quotes/) to access the live site of the web application.
 
 *****
 
@@ -34,14 +34,14 @@ Code editor i.e Visual Studio Code or Atom.
 
 ### How To Run On Your Machine
 
-* Click on this link to access my git hub Delani studio repositpory.​
+* Click on this [link](https://github.com/Abzed/quotes) to access my git hub Delani studio repositpory.​
 
 * On the top panel you will see a green button with a download icon and the word "CODE" written next to it. Click it to download the project zip file.​
 
 * Navigate to the download location then extract the zip file to your desired location.​
 
 * Right click on folder and navigate to "open with another application" and select your code editor and run the codes on your machine.
-* Or you can access the web application directly using this live [link]().​
+* Or you can access the web application directly using this live [link](https://abzed.github.io/quotes/).​
 
 *****
 
