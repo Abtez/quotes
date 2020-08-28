@@ -14,9 +14,9 @@
 
         <div>
           <h2 style="text-decoration: underline;">Quote...</h2>
-          <h4>{{ quote.quote }}</h4>
+          <h4> {{ quote.quote }}</h4>
         </div>
-
+    
         <div *ngIf="quote.showDescription" #auth class="myquotes">
           <h2>Author...</h2>
           <h4>{{ quote.author }} </h4>
@@ -28,8 +28,8 @@
         </div>
 
         <div *ngIf="quote.showDescription" class="myquotes">
-          <h2 *ngIf="quote.showDescription">From Date...</h2>
-          <h4>{{ quote.date | date : "short" }}</h4>
+          <h2 *ngIf="quote.showDescription">Time Passed...</h2>
+          <h4>{{ quote.date | datePipe }} day(s)</h4>
         </div>
 
         <app-quote-details *ngIf="quote.showDescription" [quotes]="quote" (isComplete)='deleteQuote($event,i)'></app-quote-details>

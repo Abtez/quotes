@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { FormInputComponent } from './form-input/form-input.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HighlightDirective } from './highlight.directive';
+import { DatePipePipe } from './date-pipe.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HighlightDirective } from './highlight.directive';
     HomeComponent,
     FormInputComponent,
     QuoteDetailsComponent,
-    HighlightDirective
+    HighlightDirective,
+    DatePipePipe
   ],
   imports: [
     BrowserModule,

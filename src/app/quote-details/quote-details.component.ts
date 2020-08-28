@@ -24,13 +24,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   thumbsDown = 0;
   downVote(){
-   this.thumbsDown--
-  }
-
-  highestValue(){
-    if(this.thumbsUp === Math.max()){
-      return true;
-    }
+   this.thumbsDown++
   }
 
   constructor() { }

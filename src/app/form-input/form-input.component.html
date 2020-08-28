@@ -1,35 +1,33 @@
 <div class="container-fluid">
     <!-- Jumbotron -->
-    <div class="card card-image" style="background-image: url(./../../assets/bridge.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
+    <div class="card card-image" style="background-image: url(./assets/bridge.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
         <div class="text-white text-center rgba-stylish-strong py-5 px-4">
           <div class="py-5">
       
             <!-- Content -->
             <h1 class="h5 orange-text"><i class="fas fa-quote-left"></i> Centuary Quotes <i class="fas fa-quote-right"></i></h1>
             <h3 class="card-title h2 my-4 py-2">Share your wisdom with the world ... share your quote ...! </h3>  
-            <form (ngSubmit)="onSubmit()" id="addtoquote">
 
                 <div class="md-form input-with-pre-icon">
                     <i class="fa fa-quote-left input-prefix"></i>
-                    <input type="text" [(ngModel)]="newQuote.quote" #name='ngModel' name="quotesinput" class="form-control">
+                    <input type="text" [(ngModel)]="newQuote.quote" name="quotesinput" class="form-control">
                     <label for="quoteinput">Write Quote Here... </label>
                   </div>
 
                   <div class="md-form input-with-pre-icon">
-                    <input type="text" [(ngModel)]="newQuote.author" #name='ngModel' name="author" placeholder="Author Of The Quote" class="form-group">
+                    <input type="text" [(ngModel)]="newQuote.author" name="author" placeholder="Author Of The Quote" class="form-group">
                   </div>
 
                   <div class="md-form input-with-pre-icon">
-                    <input type="text" [(ngModel)]="newQuote.submitter" #name='ngModel' name="submitter" placeholder="Submitted by..." class="form-group">
+                    <input type="text" [(ngModel)]="newQuote.submitter" name="submitter" placeholder="Submitted by..." class="form-group">
                   </div>
 
                   <div id="date-picker-example" id="datepicker" class="md-form md-outline input-with-post-icon datepicker">
-                    <input placeholder="Select date" type="date" [(ngModel)]="newQuote.date" #name='ngModel' name="date" class="form-group">
+                    <input placeholder="Select date" type="date" [(ngModel)]="newQuote.date" name="date" class="form-group">
                   </div>
                 
                     <button (click)="onSubmit()" class="btn blue-gradient btn-rounded"><i class="fa fa-quote-left"></i> Add Quote</button>
                 
-                </form>
 
       
           </div>

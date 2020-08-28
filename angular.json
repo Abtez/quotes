@@ -95,7 +95,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "/home/moringa/Documents/quotes/node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           }
         },
